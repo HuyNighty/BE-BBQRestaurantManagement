@@ -1,0 +1,18 @@
+package com.huynguyen.bbqrestaurantmanagement.keys;
+
+import jakarta.persistence.Embeddable;
+import lombok.*;
+
+import java.io.Serializable;
+
+@Embeddable
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@EqualsAndHashCode
+public class PromotionMenuItemId implements Serializable {
+
+    Long promotionId;
+    Long menuItemId;
+}
