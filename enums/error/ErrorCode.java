@@ -27,7 +27,8 @@ public enum ErrorCode {
     NO_RELATION_FOUND(1013, "Relation not found", HttpStatus.NOT_FOUND),
     ENUM_VALUE_INVALID(1014, "Enum value is invalid", HttpStatus.BAD_REQUEST),
     NAME_EXISTED(1015, "This name already exists", HttpStatus.BAD_REQUEST),
-    INVALID_REQUEST(1016, "Invalid request", HttpStatus.BAD_REQUEST);
+    INVALID_REQUEST(1016, "Invalid request", HttpStatus.BAD_REQUEST),
+    RATING_LIMIT(1017, "Rating must be in 1 - 10", HttpStatus.BAD_REQUEST),
     ;
 
     int code;
